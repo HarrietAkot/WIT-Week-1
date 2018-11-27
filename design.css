@@ -1,0 +1,61 @@
+#navbar{
+    text-decoration: none;
+    font-size: 130%;
+    float: left;
+    background-color: rgb(136, 156, 247);
+    width:25%;
+    height: 100%;
+    color: rgb(12, 10, 26);
+    padding-left: 3%;
+    line-height: 250%;
+    position:fixed;
+    text-align: center;
+  
+}
+#wholebody{
+    background-color: black;
+    width: 100%;
+}
+#main{
+    font-size: 120%;
+    float: right;
+    background-color:rgb(136, 156, 247); 
+    width:62%;
+    padding-left: 5%;
+    padding-right: 3%;
+    position: relative;
+    line-height: 250%;
+    color: rgb(12, 10, 26);
+
+}
+
+.code{
+    background-color: rgb(246, 245, 244);
+    width:60%;
+    border-radius: 5px;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+.links{
+    text-decoration: none;
+    color: rgb(12, 10, 26);
+    
+     
+}
+table{
+    background-color: rgb(189, 205, 247);
+    width: 100%;
+    text-align: center;
+    height: 60%;
+
+}
+td{
+    background-color:rgb(136, 156, 247); 
+}
+h1, h2, h3, h4, h5{
+  
+}
+p{
+
+}

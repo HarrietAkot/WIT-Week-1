@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Responsive web page</title>
+       
+            <link rel="stylesheet" href="design.css">
+        
+    </head>
+    <body>
+        <div id="wholebody">
+        <div id="navbar">
+            <h2>Javascript <br/>Documentation</h2>
+            <table>
+        
+            <tr><td><a href="#introduction" class="links">Introduction</a></td></tr>
+            <tr><td><a href="#variables" class="links">Variables</a></td></tr>
+            <tr><td><a href="#controlflow" class="links">Control flow</a></td></tr>
+            <tr><td><a href="#functions" class="links">Functions</a></td></tr>
+            <tr><td><a href="#classes" class="links">Classes and objects</a></td></tr>
+             
+            </table>
+    </div>
+    <div id="main">
+
+
+     
+        <h2><a id="introduction">Introduction</a></h2>
+        <p>JavaScript is a client-side scripting language that runs entirely inside the web browser. JavaScript brings a dynamic functionality to your websites. Every time you see something
+                pop up when you mouse over an item in the browser, or see new text, colors, or images appear on the page in front of your eyes, or grab an object on the page and drag
+                it to a new location all those things are done through JavaScript. It offers effects that
+                are not otherwise possible, because it runs inside the browser and has direct access to
+                all the elements in a web document.</p>
+        <h2><a id="variables">Variables</a></h2>
+        <p>
+            <h4>String Variables</h4>
+            JavaScript string variables should be enclosed in either single or double quotation
+                marks, like this:
+                <code>
+                    <div class="code">
+                            greeting = "Hello there"<br/>
+                            warning = 'Be careful'<br/>
+                    </div>
+                </code>
+            <h4>Numeric Variables</h4>
+             Creating a numeric variable is as simple as assigning a value, like these examples:
+             <code>
+                 <div class="code">
+                        count = 42<br/>
+                        temperature = 98.4<br/>
+                 </div>
+             </code>
+            <h4> Arrays</h4>
+JavaScript arrays can contain string or numeric data, as well as other arrays. To assign values to an array, use the
+following syntax (which in this case creates an array of strings):
+<code>
+    <div class="code">
+            toys = ['bat', 'ball', 'whistle', 'puzzle', 'doll']<br/>
+    </div>
+</code>
+
+
+        </p>
+
+        <h2><a id="controlflow">Control flow</a></h2>
+        <h4>Conditionals(The <tt>if</tt> statement)</h4>
+        <p>Conditionals alter program flow. They enable you to ask questions about certain things
+                and respond to the answers you get in different ways. There are three types of nonlooping
+                conditionals: the <tt>if</tt> statement, the <tt>switch</tt> statement, and the ? operator.<br/>
+            <code>
+                <div class="code">
+                if (a > 100)<br/>
+                    {<br/>
+                    b=2<br/>
+                    document.write("a is greater than 100")<br/>
+                }<br/>
+                 if (b == 10) document.write("b is equal to 10")<br/>
+                </div>
+                </code>
+                <h4>The else statement</h4>
+                When a condition has not been met, you can execute an alternative using an else
+                statement, like this:
+                <code>
+                    <div class="code">
+                        if (a > 100)<br/>
+                        {<br/>
+                        document.write("a is greater than 100")<br/>
+                        }<br/>
+                        else<br/>
+                        {<br/>
+                        document.write("a is less than or equal to 100")<br/>
+                        }<br/>
+                    </div>
+                </code>
+                <h4>The switch statement</h4>
+                 The switch statement is useful when one variable or the result of an expression can
+                 have multiple values, for each of which you want to perform a different function.
+                 <code>
+                     <div class="code">
+                            switch (page)<br/>
+                            {<br/>
+                            case "Home": document.write("You selected Home")<br/>
+                            break<br/>
+                            case "About": document.write("You selected About")<br/>
+                            break<br/>
+                            case "News": document.write("You selected News")<br/>
+                            break<br/>
+                            case "Login": document.write("You selected Login")<br/>
+                            break<br/>
+                            case "Links": document.write("You selected Links")<br/>
+                            break<br/>
+                            }<br/>
+                     </div>
+                 </code>
+                <h4> Looping</h4>
+                <h5>while Loops</h5>
+               <code>
+                   <div class="code">
+                        counter=0<br/>
+                        while (counter < 5)<br/>
+                        {<br/>
+                            document.write("Counter: " + counter + )<br/>
+                            ++counter<br/>
+                            }<br/>
+
+                   </div>
+               </code>
+               <h5>do…while Loops</h5>
+               When you require a loop to iterate at least once before any tests are made, use a
+do...while loop, which is similar to a while loop except that the test expression is
+checked only after each iteration of the loop.
+                <code>
+                    <div class="code">
+                            count = 1<br/>
+                            <br/>
+                            {<br/>
+                            document.write(count + " times 7 is " + count * 7 + "<br />")<br/>
+                            } while (++count <= 7)<br/>
+                    </div>
+                </code>
+            <h5>for Loops</h5>
+            A for loop combines the best of all worlds into a single looping construct that allows
+you to pass three parameters for each statement:<ul><li>An initialization expression</li><li>A condition expression</li><li>A modification expression</li></ul>
+                <code>
+                    <div class="code">
+                            for (count = 1 ; count <= 7 ; ++count)<br/>
+                            {<br/>
+                            document.write(count + "times 7 is " + count * 7 + "<br />");<br/>
+                            }<br/>
+                    </div>
+                </code>
+
+            </p>
+        <h2><a id="functions">Functions</a></h2>
+        <h4>Defining a Function</h4>
+
+        <p>The general syntax for a function is: <br/>  
+            <code>
+                <div class="code">
+                        function function_name([parameter [, ...]])<br/>
+                        {<br/>
+                        statements<br/>
+                        }<br/>
+                </div>
+                </code>   <br/> 
+             
+        </p>
+        <h2><a id="classes">Classes and Objects</a></h2>
+         <p>
+                A JavaScript object is a step up from a variable, which can contain only one value at a
+                time, in that objects can contain multiple values and even functions. An object groups
+                data together with the functions needed to manipulate it. 
+                <h4>Declaring a Class</h4>
+                When creating a script to use objects, you need to design a composite of data and code
+called a class. Each new object based on this class is called an instance (or occurrence) of that class. As you’ve already seen, the data associated with an object are called its
+properties, while the functions it uses are called methods.
+<code>
+    <div class="code">
+            function User(forename, username, password)<br/>
+            {<br/>
+            this.forename = forename<br/>
+            this.username = username<br/>
+            this.password = password<br/>
+            this.showUser = function()<br/>
+            {<br/>
+            document.write("Forename: " + this.forename + "<br />")<br/>
+            document.write("Username: " + this.username + "<br />")<br/>
+            document.write("Password: " + this.password + "<br />")<br/>
+            }<br/>
+            }<br/>
+    </div>
+</code>
+        </p>
+
+        </div>
+
+    </div>
+    </body>
+</html>
